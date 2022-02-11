@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title></title>
+    <dateModified></dateModified>
+    <ownerName></ownerName>
+  </head>
+  <body>
+<outline text="驱动" _note="&lt;https://blog.csdn.net/weixin_44895651/article/details/109193894&gt;&#10;&#10;![](https://gitee.com/ling66611/picgo-image/raw/master/master/2020102110525049.png)&#10;&#10;![](https://gitee.com/ling66611/picgo-image/raw/master/master/20201021111820191.png)">
+  <outline text="linux驱动有两种运行方式" _note="1.  将驱动编写进Linux内核中，当linux内核启动的时候就会自动运行驱动程序。&#10;&#10;2.  将驱动编译成模块（linux下模块拓展名为.ko），在linux内核启动以后使用“insmod”命令加载驱动模块。">
+  </outline>
+</outline>
+<outline text="vscode 键盘快捷方式keybindings.json" _note="">
+</outline>
+<outline text="c语言extern关键字" _note="&lt;https://blog.csdn.net/xingjiarong/article/details/47656339&gt;&#10;&#10;extern关键字可以在一个文件中引用另一个文件中定义的变量或函数。&#10;&#10;1.  **引用同一个文件中的变量** 利用extern关键字，使用在后边定义的变量。&#10;&#10;        #include&lt;stdio.h&gt;&#10;&#10;        int func();&#10;&#10;        int main()&#10;        {&#10;            func(); //1&#10;            extern int num;&#10;            printf(&quot;%d&quot;,num); //2&#10;            return 0;&#10;        }&#10;&#10;        int num = 3;&#10;&#10;        int func()&#10;        {&#10;            printf(&quot;%d\n&quot;,num);&#10;        }&#10;&#10;2.  **引用另一个文件中的变量**&#10;    ![](https://gitee.com/ling66611/picgo-image/raw/master/master/image-20220105135701695.png &quot;fig:&quot;)&#10;&#10;3.  **引用另一个文件中的函数**&#10;&#10;        //main.c&#10;        #include &lt;stdio.h&gt;&#10;        int main()&#10;        {&#10;            extern void func();&#10;            func();&#10;        	return 0;&#10;        }&#10;&#10;        //b.c&#10;        #include &lt;stdio.h&gt;&#10;        const int num = 5;&#10;        void func()&#10;        {&#10;            print(&quot;fun in b.c&quot;);&#10;        }">
+</outline>
+<outline text="摄像机数字变倍，光学变倍区别" _note="数字变倍（变焦）就是已经有了的画面取其中一部分加以放大，也就是说，放得越大画面越不清楚。&#10;光学变倍（变焦）是在实景当中，把某处放大，（类似与用望远镜看景物）。无论放的多大，都会清楚。&#10;所以，光学变焦最重要。但光学变焦倍数越大，相机价格越高。">
+</outline>
+<outline text="云台PPT" _note="D 数据位&#10;&#10;控制什么直接把相应的位至成1，其他位填0。">
+  <outline text="云台架构图">
+  </outline>
+  <outline text="架构图分类" _note="有一种比较流行的是4+1视图，分别为场景视图、逻辑视图、物理视图、处理流程视图和开发视图。">
+  </outline>
+</outline>
+<outline text="16进制转换10进制" _note="&lt;https://www.jianshu.com/p/c883a6e23016&gt;&#10;&#10;    func main() {&#10;    	// DataToPosition(24, 221)&#10;    	h:=hexToBigInt(&quot;0x18dd&quot;)&#10;    	fmt.Println(h)&#10;    }&#10;&#10;    func DataToPosition(dec1, dec2 int) {&#10;    	a := dec1&lt;&lt;8 | dec2&#10;    	fmt.Println(a)&#10;&#10;    }&#10;&#10;    func hexToBigInt(hex string) *big.Int {&#10;    	n := new(big.Int)&#10;    	n, _ = n.SetString(hex[2:], 16)&#10;&#10;    	return n&#10;    }&#10;&#10;    	var num01 int = 0xf&#10;    	fmt.Printf(&quot;%x的十进制为%d&quot;, num01,num01)&#10;&#10;&#10;    1. 二进制转八进制  %b -&gt; %o&#10;    2. 二进制转十进制  %b -&gt;  %d&#10;    3. 二进制转十六进制 %b -&gt; %x&#10;    4. 八进制转二进制 %o -&gt; %b&#10;    5. 八进制转十进制 %o -&gt; %d&#10;    6. 八进制转十六进制 %o -&gt; %x&#10;    7. 十进制转二进制 %d -&gt; %b&#10;    8. 十进制转八进制 %d -&gt; %o&#10;    9. 十进制转十六进制 %d -&gt; %x&#10;    10. 十六进制转二进制 %x -&gt; %b&#10;    11. 十六进制转八进制 %x -&gt; %o&#10;    12. 十六进制转十进制 %x -&gt; %d">
+</outline>
+<outline text="Ubuntu20.04 alias别名" _note="    vim /home/ling/.bashrc&#10;    source /home/ling/.bashrc&#10;    alias ss='source ~/cgo/528.sh'&#10;    alias cc='cd /home/ling/go/src/neuron'&#10;    alias ww='go build'&#10;    alias ff='cp neuron /home/ling/share'">
+</outline>
+<outline text="vscode常用快捷键" _note="前进ctrl+left 后退ctrl+right">
+</outline>
+  </body>
+</opml>
