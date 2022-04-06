@@ -271,6 +271,21 @@ bee.controller    c.SetSession("username","张三")
 
 # swagger
 
+https://blog.csdn.net/qq_534019165/article/details/48288133
+
+1.17以前
+
+1. go get github.com/astaxie/beego
+2. go get github.com/beego/bee
+
+1.17以后
+
+1. go install github.com/astaxie/beego
+2. go install github.com/beego/bee
+3. sudo cp bee /usr/local/go/bin/           
+   把/home/ling/go/bin 里面的bee 复制到/usr/local/go/bin
+4. bee run -gendoc=true -downdoc=true
+
 生成swagger文档
 
  ```go
